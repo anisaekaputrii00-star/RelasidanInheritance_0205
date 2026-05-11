@@ -2,20 +2,16 @@
 #include <vector>
 using namespace std;
 
-class dokter;
-class pasien { // asosiasi
-public:
+#include "anak.h"
+#include "ibu.h"
 
-    string nama;
-    vector<dokter*> daftar_dokter;
-    pasien(string pNama) :nama(pNama) {
-        cout << "Pasien \"" << nama << "\" ada\n";
-    }
-    ~pasien() {
-        cout << "Pasien \"" << nama << "\" tidak ada\n";
-    }
-
-    void tambahDokter(dokter*);
-    void cetakDokter();
-};
-
+int main()
+{
+    Ibu* varIbu = new Ibu("rani");
+    Ibu* varIbu2 = new Ibu("sari");
+    Ibu* varAnak1 = new Ibu("tono");
+    Ibu* varAnak2 = new Ibu("tiara");
+    Ibu* varAnak3 = new Ibu("dini");
+    
+}
+    
