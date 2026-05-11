@@ -81,4 +81,6 @@ int main()
     delete varDokter1;
     delete varDokter2;
 
+    return 0;
+
 }
