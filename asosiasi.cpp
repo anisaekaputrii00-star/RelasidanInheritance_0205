@@ -25,15 +25,16 @@ public:
 
 };
 
-class Dokter{
+class dokter {
 public:
     string nama;
     vector<pasien*> daftar_pasien;
 
-    dokter(string pNama) :nama(pNama)
+    dokter(string pNama) : nama(pNama)
     {
         cout << "Dokter \"" << nama << "\" ada\n";
     }
+
 
     ~dokter()
     {
@@ -42,4 +43,9 @@ public:
 
     void tambahPasien(pasien*);
     void cetakPasien();
+};
+
+void pasien::tambahDokter(dokter* pDokter)
+{
+    daftar_dokter.push_back(pDokter);
 };
