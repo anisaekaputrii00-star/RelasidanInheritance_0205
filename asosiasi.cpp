@@ -27,5 +27,8 @@ public:
 
 class Dokter{
 public:
+    string nama;
+    vector<pasien*> daftar_pasien;
+    
 
 }
