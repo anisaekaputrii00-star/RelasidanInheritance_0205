@@ -49,4 +49,14 @@ public:
             cout << "Nonaktif" << endl;
     }
 
-   
+    void setStatus(bool status)
+    {
+        this->status = status;
+    }
+
+    bool getStatus()
+    {
+        return status;
+    }
+};
+
