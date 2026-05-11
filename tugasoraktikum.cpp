@@ -23,6 +23,16 @@ class User{
 
     int User::globalId = 0;
 
-    class Member : public User{
+    class Member : public User
+    {
+    bool status;
+
+    Member(string nama, string email, bool status)
+    : User(nama, email)
+{
+    this->status = status;
+}
+
+    void showProfile() 
 };
 }
