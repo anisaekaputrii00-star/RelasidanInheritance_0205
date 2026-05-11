@@ -9,5 +9,6 @@ int main()
 {
 
     manusia *varManusia = new manusia("Jono");
-    
+    delete varManusia;
+    return 0;
 }
