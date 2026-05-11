@@ -83,3 +83,22 @@ public:
     }
 };
 
+int main()
+{
+    Member m1("Annisa", "annisa@gmail.com", true);
+    Member m2("Nisa", "nisa@gmail.com", false);
+
+    Member daftarMember[] = {m1, m2};
+
+    Admin admin("Admin", "admin@gmail.com");
+
+    cout << "=== Sebelum Toggle ===" << endl;
+    admin.showAllMember(daftarMember, 2);
+
+    admin.toggleActivationMember(daftarMember[1]);
+
+    cout << "\n=== Setelah Toggle ===" << endl;
+    admin.showAllMember(daftarMember, 2);
+
+    return 0;
+}
