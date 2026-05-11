@@ -17,9 +17,12 @@ class User{
     }
 
     int generateId()
-{
+    {
     return ++globalId;
-}
+    }
 
     int User::globalId = 0;
+
+    class Member : public User{
+};
 }
