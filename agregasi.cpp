@@ -12,6 +12,10 @@ int main()
     Ibu* varAnak1 = new Ibu("tono");
     Ibu* varAnak2 = new Ibu("tiara");
     Ibu* varAnak3 = new Ibu("dini");
+
+    varIbu->tambahAnak(varAnak1);
+    varIbu->tambahAnak(varAnak2);
+    varIbu2->tambahAnak(varAnak3);
     
 }
     
