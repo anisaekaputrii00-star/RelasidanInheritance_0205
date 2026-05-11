@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-class user{
+class User{
     public:
     static int globalId;
     int id;
@@ -15,4 +15,11 @@ class user{
         this->email = email;
         id = generateId();
     }
+
+    int generateId()
+{
+    return ++globalId;
+}
+
+    int User::globalId = 0;
 }
