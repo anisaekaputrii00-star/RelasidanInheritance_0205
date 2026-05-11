@@ -23,4 +23,9 @@ public:
     void tambahDokter(dokter* pDokter);
     void cetakDokter();
 
+};
+
+class Dokter{
+public:
+
 }
