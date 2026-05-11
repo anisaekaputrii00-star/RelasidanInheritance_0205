@@ -17,5 +17,14 @@ public:
     {
         cout << "Ibu \"" << nama << "\" ada\n";
     }
-}
-   
+
+    ~ibu()
+    {
+        cout << "Ibu \"" << nama << "\" tidak ada\n";
+    };
+
+    
+};
+#endif
+
+
